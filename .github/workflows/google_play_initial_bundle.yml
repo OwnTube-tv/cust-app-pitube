@@ -1,0 +1,41 @@
+name: Generate initial bundle(s) for manual upload to Google Play Console
+
+on:
+  workflow_dispatch:
+    inputs:
+      isTVNeeded:
+        description: "Bundle for Android TV as well?"
+        type: boolean
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "owntube-build"
+  cancel-in-progress: false
+
+jobs:
+  generate_android_bundle:
+    uses: OwnTube-tv/web-client/.github/workflows/google_play_initial_bundle.yml@main
+    secrets:
+      ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+      ANDROID_SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_SIGNING_KEY_ALIAS }}
+      ANDROID_SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_SIGNING_KEY_PASSWORD }}
+      ANDROID_RELEASE_KEYSTORE_CONTENT_BASE64: ${{ secrets.ANDROID_RELEASE_KEYSTORE_CONTENT_BASE64 }}
+      ANDROID_SERVICE_ACCOUNT_JSON: ${{ secrets.ANDROID_SERVICE_ACCOUNT_JSON }}
+    with:
+      owntube_source: OwnTube-tv/web-client
+      use_parent_repo_customizations: true
+
+  generate_android_tv_bundle:
+    if: ${{ github.event.inputs.isTVNeeded == 'true' }}
+    uses: OwnTube-tv/web-client/.github/workflows/google_play_initial_bundle.yml@main
+    secrets:
+      ANDROID_KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+      ANDROID_SIGNING_KEY_ALIAS: ${{ secrets.ANDROID_SIGNING_KEY_ALIAS }}
+      ANDROID_SIGNING_KEY_PASSWORD: ${{ secrets.ANDROID_SIGNING_KEY_PASSWORD }}
+      ANDROID_RELEASE_KEYSTORE_CONTENT_BASE64: ${{ secrets.ANDROID_RELEASE_KEYSTORE_CONTENT_BASE64 }}
+      ANDROID_SERVICE_ACCOUNT_JSON: ${{ secrets.ANDROID_SERVICE_ACCOUNT_JSON }}
+    with:
+      isTV: true
+      owntube_source: OwnTube-tv/web-client
+      use_parent_repo_customizations: true
