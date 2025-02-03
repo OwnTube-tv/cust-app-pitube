@@ -1,4 +1,4 @@
-EXPO_PUBLIC_APP_NAME=Privacy Tube
+EXPO_PUBLIC_APP_NAME="Privacy Tube"
 EXPO_PUBLIC_APP_SLUG=com.owntubetv.pitube
 EXPO_PUBLIC_IOS_BUNDLE_IDENTIFIER=com.owntubetv.pitube
 EXPO_PUBLIC_ANDROID_PACKAGE=com.owntubetv.pitube
