@@ -108,9 +108,8 @@ jobs:
       - name: Read the customization env file
         id: read_customization_file
         run: |
-          echo "$(cat "./.customizations")"
           echo 'CUSTOMIZATIONS_ENV_CONTENT<<EOF' >> $GITHUB_OUTPUT
-          printf "%s\n" $(cat "./.customizations") >> $GITHUB_OUTPUT
+          cat "./.customizations" >> $GITHUB_OUTPUT
           echo 'EOF' >> $GITHUB_OUTPUT
 
   deploy_web:
