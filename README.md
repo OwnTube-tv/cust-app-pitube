@@ -1,16 +1,19 @@
-# OwnTube Branded App Template
+# OwnTube Privacy Tube Branded App
 
-A template repository for creating a customized branded OwnTube instance. This repository provides the structure and configuration required to set up a fully branded app for OwnTube.
+Customized Android, AndroidTV, iOS and tvOS builds for Privacy Tube brand of OwnTube-tv/web-client.
 
-## Overview
+Web version available at: https://owntube-tv.github.io/cust-app-pitube/
 
-This template allows you to easily:
+App beta versions:
 
-- Customize the app name, icon, and splash screen.
-- Restrict the app to a specific OwnTube backend.
-- Generate configurations for both web and mobile platforms.
+<a href="https://testflight.apple.com/join/KAAJgPss">
+  <img height=75 alt="Get the beta on TestFlight" src="https://askyourself.app/assets/testflight.png"/>
+</a>
+<br/>
+<a href="https://play.google.com/apps/testing/com.owntubetv.pitube">
+  <img height=75 alt="Get the beta on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"/>
+</a>
 
----
 
 ## How to Use
 
