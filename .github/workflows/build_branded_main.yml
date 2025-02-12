@@ -177,7 +177,7 @@ jobs:
   testflight_ios:
     if: ${{ github.event.inputs.upload_ios_to_testflight == 'true' }}
     needs: [build_info, customizations_setup, choose_macos_runner]
-    uses: ./.github/workflows/testflight.yml
+    uses: OwnTube-tv/web-client/.github/workflows/testflight.yml@main
     secrets:
       BUILD_CERTIFICATE_BASE64: ${{ secrets.IOS_BUILD_CERTIFICATE_BASE64 }}
       PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_BUILD_PROVISION_PROFILE_BASE64 }}
@@ -199,7 +199,7 @@ jobs:
   testflight_tvos:
     if: ${{ github.event.inputs.upload_tvos_to_testflight == 'true' }}
     needs: [build_info, customizations_setup, choose_macos_runner]
-    uses: ./.github/workflows/testflight.yml
+    uses: OwnTube-tv/web-client/.github/workflows/testflight.yml@main
     secrets:
       BUILD_CERTIFICATE_BASE64: ${{ secrets.TVOS_BUILD_CERTIFICATE_BASE64 }}
       PROVISIONING_PROFILE_BASE64: ${{ secrets.TVOS_BUILD_PROVISION_PROFILE_BASE64 }}
