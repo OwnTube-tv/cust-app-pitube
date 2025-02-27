@@ -16,3 +16,4 @@ EXPO_PUBLIC_APPLE_TV_TOP_SHELF_2X=../customizations/assets/appleTV/AppleTvTopShe
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE=../customizations/assets/appleTV/AppleTvTopShelfWide_2320x720.png
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=../customizations/assets/appleTV/AppleTvTopShelfWide_4640x1440.png
 EXPO_PUBLIC_ANDROID_TV_BANNER=../customizations/assets/androidTvBanner_320x180.png
+EXPO_PUBLIC_CUSTOM_DEPLOYMENT_URL=cust-app-pitube.owntube.tv
