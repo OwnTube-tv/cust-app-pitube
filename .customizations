@@ -1,4 +1,4 @@
-EXPO_PUBLIC_APP_NAME=Privacy Tube
+EXPO_PUBLIC_APP_NAME='Privacy Tube'
 EXPO_PUBLIC_APP_SLUG=com.owntubetv.pitube
 EXPO_PUBLIC_IOS_BUNDLE_IDENTIFIER=com.owntubetv.pitube
 EXPO_PUBLIC_ANDROID_PACKAGE=com.owntubetv.pitube
@@ -17,3 +17,8 @@ EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE=../customizations/assets/appleTV/AppleTvTopS
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=../customizations/assets/appleTV/AppleTvTopShelfWide_4640x1440.png
 EXPO_PUBLIC_ANDROID_TV_BANNER=../customizations/assets/androidTvBanner_320x180.png
 EXPO_PUBLIC_CUSTOM_DEPLOYMENT_URL=cust-app-pitube.owntube.tv
+EXPO_PUBLIC_ICON_192=../customizations/assets/icon_192x192.png
+EXPO_PUBLIC_ICON_512=../customizations/assets/icon_512x512.png
+EXPO_APP_THEME_COLOR='#FFFFFF'
+EXPO_APP_BG_COLOR='#00E1FD'
+EXPO_APP_DESCRIPTION='Privacy Tube brand of OwnTube.tv'
