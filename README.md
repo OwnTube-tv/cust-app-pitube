@@ -2,7 +2,7 @@
 
 Customized Android, AndroidTV, iOS and tvOS builds for Privacy Tube brand of OwnTube-tv/web-client.
 
-Web version available at: https://owntube-tv.github.io/cust-app-pitube/
+Web version available at: https://cust-app-pitube.owntube.tv/
 
 App beta versions:
 
