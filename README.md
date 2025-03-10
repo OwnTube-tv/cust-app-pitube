@@ -10,7 +10,7 @@ App beta versions:
   <img height=75 alt="Get the beta on TestFlight" src="https://askyourself.app/assets/testflight.png"/>
 </a>
 <br/>
-<a href="https://play.google.com/apps/testing/com.owntubetv.pitube">
+<a href="https://play.google.com/store/apps/details?id=com.owntubetv.pitube">
   <img height=75 alt="Get the beta on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"/>
 </a>
 
