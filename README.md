@@ -1,6 +1,6 @@
-# OwnTube Privacy Tube Branded App
+# OwnTube.tv "Privacy Tube" Branded App
 
-Customized Android, AndroidTV, iOS and tvOS builds for Privacy Tube brand of OwnTube-tv/web-client.
+Customized Android, AndroidTV, iOS, and tvOS builds for Privacy Tube brand of OwnTube-tv/web-client.
 
 Web version available at: https://cust-app-pitube.owntube.tv/
 
@@ -13,7 +13,6 @@ App beta versions:
 <a href="https://play.google.com/store/apps/details?id=com.owntubetv.pitube">
   <img height=75 alt="Get the beta on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/1280px-Google_Play_Store_badge_EN.svg.png"/>
 </a>
-
 
 ## How to Use
 
@@ -52,7 +51,7 @@ Define the following variables for all platforms:
   ```bash
   EXPO_PUBLIC_ICON=<your_icon_url>
   ```
-  The global icon used in the app. Size: arbitrary but looks best if 512x512 is reused here.
+  The global icon used in the app. Size: arbitrary but it looks best if 512x512 is reused here.
 
 #### Web Platform
 Define the following variables for the web platform:
@@ -100,7 +99,7 @@ Define the following variables for the mobile platform:
   EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE=<your_apple_tv_top_shelf_wide_path>
   EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=<your_apple_tv_top_shelf_wide_2x_path>
   ```
-  Apple TV-specific icons and top shelf images. Sizes:
+  Apple TV-specific icons and top-shelf images. Sizes:
   -  icon: 1280x768
   -  iconSmall: 400x240
   -  iconSmall2x: 800x480
@@ -111,37 +110,54 @@ Define the following variables for the mobile platform:
 
 ---
 
-## Example `.customizations` File
+#### Example `.customizations` File
 
 Here is an example `.customizations` file for reference:
 
 ```bash
+EXPO_PUBLIC_APP_NAME='<Your app name>'
+EXPO_PUBLIC_APP_SLUG=<your.app.package.slug>
+EXPO_PUBLIC_IOS_BUNDLE_IDENTIFIER=<com.yourcompany.app>
+EXPO_PUBLIC_ANDROID_PACKAGE=<com.yourcompany.app>
 EXPO_PUBLIC_PRIMARY_BACKEND=<your_instance_hostname>
-EXPO_PUBLIC_APP_NAME=<your_app_name>
-EXPO_PUBLIC_APP_SLUG=<your_app_slug>
-EXPO_PUBLIC_ICON=<your_icon_url>
-EXPO_PUBLIC_FAVICON_URL=<your_favicon_url>
-EXPO_PUBLIC_BASE_URL=<your_repo_name>
-EXPO_PUBLIC_SPLASH_BG_COLOR=<your_splash_bg_color>
+EXPO_PUBLIC_FAVICON_URL=<your_favicon_path>
+EXPO_PUBLIC_SPLASH_BG_COLOR='<your_splash_bg_color>'
 EXPO_PUBLIC_SPLASH_IMAGE=<your_splash_image_path>
 EXPO_PUBLIC_ICON=<your_app_icon_path>
-EXPO_PUBLIC_HIDE_VIDEO_SITE_LINKS=<1 or 0>
 EXPO_PUBLIC_APPLE_TV_ICON=<your_apple_tv_icon_path>
-EXPO_PUBLIC_ANDROID_TV_BANNER=<your_android_tv_banner_path>
 EXPO_PUBLIC_APPLE_TV_ICON_SMALL=<your_apple_tv_icon_small_path>
 EXPO_PUBLIC_APPLE_TV_ICON_SMALL_2X=<your_apple_tv_icon_small_2x_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF=<your_apple_tv_top_shelf_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_2X=<your_apple_tv_top_shelf_2x_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE=<your_apple_tv_top_shelf_wide_path>
 EXPO_PUBLIC_APPLE_TV_TOP_SHELF_WIDE_2X=<your_apple_tv_top_shelf_wide_2x_path>
+EXPO_PUBLIC_ANDROID_TV_BANNER=<your_android_tv_banner_path>
+EXPO_PUBLIC_ICON_192=<your_public_icon_for_pwa_path>
+EXPO_PUBLIC_ICON_512=<your_public_icon_for_pwa_path>
+EXPO_PUBLIC_HIDE_VIDEO_SITE_LINKS=<1_to_enable_or_omit_for_default>
+EXPO_PUBLIC_HIDE_GIT_DETAILS=<1_to_enable_or_omit_for_default>
+EXPO_PUBLIC_LANGUAGE_OVERRIDE=<language_code>
+EXPO_PUBLIC_FOOTER_LOGO=<your_footer_logo_path>
+EXPO_PUBLIC_CUSTOM_DEPLOYMENT_URL=<your_custom_deployment_hostname>
+EXPO_PUBLIC_PROVIDER_LEGAL_ENTITY="Your Company Ltd"
+EXPO_PUBLIC_PROVIDER_LEGAL_EMAIL=legal@yourcompany.com
+EXPO_PUBLIC_PROVIDER_CONTACT_EMAIL=info@yourcompany.com
+EXPO_APP_THEME_COLOR='<theme_color_for_pwa>'
+EXPO_APP_BG_COLOR='<background_color_for_pwa>'
+EXPO_APP_DESCRIPTION='<App description for PWA>'
 ```
 
 ---
 
+### 4. Set Up Environment Variables
+
+TODO: Mike, please add docs on how to proceed with the next step here.
+
+
 ## Notes
 
 - **Image and Custom File Paths:**
-  If you want to include custom images or other files directly in this repository, place them in a `/customizations` folder. When referencing these files in the `.customizations` file, use paths starting with `../customizations/`. This is the path structure that the build process expects.
+  If you want to include custom images or other files directly in this repository, place them in a `/assets` folder. When referencing these files in the `.customizations` file, use paths starting with `../customizations/`. This is the path structure that the build process expects.
 
   For example:
   ```bash
